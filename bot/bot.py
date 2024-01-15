@@ -40,9 +40,7 @@ logger.info("Bot starting up...")
 user_semaphores = {}
 user_tasks = {}
 
-HELP_MESSAGE = """Was muss ich machen:
-Drücke unten auf "Muttis Assistent".
-"""
+HELP_MESSAGE = """"""
 
 HELP_GROUP_CHAT_MESSAGE = """You can add bot to any <b>group chat</b> to help and entertain its participants!
 
@@ -127,7 +125,7 @@ async def start_handle(update: Update, context: CallbackContext):
     db.set_user_attribute(user_id, "last_interaction", datetime.now())
     db.start_new_dialog(user_id)
 
-    reply_text = "Hi! I'm <b>ChatGPT</b> bot implemented with OpenAI API 🤖\n\n"
+    reply_text = "Salam Habibi, Ich bin dein Assistent 🤖\n\n"
     reply_text += HELP_MESSAGE
 
     await update.message.reply_text(reply_text, parse_mode=ParseMode.HTML)
