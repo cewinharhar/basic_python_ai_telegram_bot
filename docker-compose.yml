@@ -8,9 +8,9 @@ services:
     ports:
       - 127.0.0.1:${MONGODB_PORT:-27017}:${MONGODB_PORT:-27017}
 
-  telebot:
-    container_name: telebot
-    image: telegrambotregistry.azurecr.io/test
+  spitexbot:
+    container_name: spitexbot
+    image: kevinbotregistry.azurecr.io/spitexbot
     command: python3 bot/bot.py
     restart: always
 

@@ -31,5 +31,5 @@ with open(config_dir / "chat_modes.yml", 'r') as f:
 with open(config_dir / "models.yml", 'r') as f:
     models = yaml.safe_load(f)
 
-# files
-help_group_chat_video_path = Path(__file__).parent.parent.resolve() / "static" / "help_group_chat.mp4"
+# # files
+# help_group_chat_video_path = Path(__file__).parent.parent.resolve() / "static" / "help_group_chat.mp4"

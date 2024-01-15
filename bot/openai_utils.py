@@ -12,7 +12,7 @@ if config.openai_api_base is not None:
 
 OPENAI_COMPLETION_OPTIONS = {
     "temperature": 0.7,
-    "max_tokens": 1000,
+    "max_tokens": 2000,
     "top_p": 1,
     "frequency_penalty": 0,
     "presence_penalty": 0,
@@ -21,7 +21,7 @@ OPENAI_COMPLETION_OPTIONS = {
 
 
 class ChatGPT:
-    def __init__(self, model="gpt-3.5-turbo"):
+    def __init__(self, model="gpt-4-1106-preview"):
         assert model in {"text-davinci-003", "gpt-3.5-turbo-16k", "gpt-3.5-turbo", "gpt-4", "gpt-4-1106-preview"}, f"Unknown model: {model}"
         self.model = model
 
