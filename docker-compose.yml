@@ -8,8 +8,8 @@ services:
     ports:
       - 127.0.0.1:${MONGODB_PORT:-27017}:${MONGODB_PORT:-27017}
 
-  telebot:
-    container_name: telebot
+  habibot:
+    container_name: habibot
     image: kevinbotregistry.azurecr.io/habibot
     command: python3 bot/bot.py
     restart: always
