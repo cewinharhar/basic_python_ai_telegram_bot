@@ -12,7 +12,7 @@ services:
     container_name: spitexbot
     image: kevinbotregistry.azurecr.io/spitexbot
     command: python3 bot/bot.py
-    restart: always
+    restart: always  
 
   habibot:
     container_name: habibot
