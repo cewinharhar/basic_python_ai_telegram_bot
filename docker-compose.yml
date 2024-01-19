@@ -14,6 +14,18 @@ services:
     command: python3 bot/bot.py
     restart: always
 
+  habibot:
+    container_name: habibot
+    image: kevinbotregistry.azurecr.io/habibot
+    command: python3 bot/bot.py
+    restart: always    
+
+  tyobot:
+    container_name: tyobot
+    image: kevinbotregistry.azurecr.io/tyobot
+    command: python3 bot/bot.py
+    restart: always
+
   mongo_express:
     container_name: mongo-express
     image: mongo-express:latest
